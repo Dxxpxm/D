@@ -1,1 +1,256 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern responsive website with interactive features">
+    <meta name="keywords" content="web development, responsive design, modern website">
+    <title>Modern Web Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h2>WebSolutions</h2>
+            </div>
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link" data-scroll="home">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link" data-scroll="about">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#services" class="nav__link" data-scroll="services">Services</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#portfolio" class="nav__link" data-scroll="portfolio">Portfolio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link" data-scroll="contact">Contact</a>
+                </li>
+            </ul>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Build Amazing Web Experiences</h1>
+                    <p class="hero__description">We create modern, responsive websites that engage your audience and drive results. Transform your digital presence with our expert web development services.</p>
+                    <div class="hero__buttons">
+                        <button class="btn btn--primary btn--lg" id="ctaButton">Get Started</button>
+                        <button class="btn btn--outline btn--lg" data-scroll="portfolio">View Our Work</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section__title">About Us</h2>
+                <p class="section__subtitle">We're passionate about creating digital experiences that make a difference</p>
+                <div class="about__grid">
+                    <div class="about__content">
+                        <h3>Our Mission</h3>
+                        <p>We believe great web design should be accessible to everyone. Our mission is to create stunning, functional websites that help businesses grow and connect with their audiences.</p>
+                        <ul class="about__features">
+                            <li>5+ years of experience</li>
+                            <li>50+ successful projects</li>
+                            <li>24/7 customer support</li>
+                            <li>Mobile-first approach</li>
+                        </ul>
+                    </div>
+                    <div class="about__stats">
+                        <div class="stat-card">
+                            <div class="stat-card__number" data-count="50">0</div>
+                            <div class="stat-card__label">Projects Completed</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__number" data-count="98">0</div>
+                            <div class="stat-card__label">Client Satisfaction</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-card__number" data-count="5">0</div>
+                            <div class="stat-card__label">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section__title">Our Services</h2>
+                <p class="section__subtitle">Comprehensive web solutions tailored to your needs</p>
+                <div class="services__grid">
+                    <div class="service-card">
+                        <div class="service-card__icon">ðŸŽ¨</div>
+                        <h3 class="service-card__title">Web Design</h3>
+                        <p class="service-card__description">Beautiful, user-friendly designs that capture your brand identity and engage visitors.</p>
+                        <button class="btn btn--outline btn--sm service-card__button">Learn More</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">ðŸ’»</div>
+                        <h3 class="service-card__title">Development</h3>
+                        <p class="service-card__description">Custom web development using modern technologies and best practices.</p>
+                        <button class="btn btn--outline btn--sm service-card__button">Learn More</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">ðŸ“±</div>
+                        <h3 class="service-card__title">Responsive Design</h3>
+                        <p class="service-card__description">Mobile-first designs that work perfectly on all devices and screen sizes.</p>
+                        <button class="btn btn--outline btn--sm service-card__button">Learn More</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">ðŸš€</div>
+                        <h3 class="service-card__title">Performance</h3>
+                        <p class="service-card__description">Fast-loading, optimized websites that provide excellent user experience.</p>
+                        <button class="btn btn--outline btn--sm service-card__button">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section__title">Our Portfolio</h2>
+                <p class="section__subtitle">Recent projects that showcase our expertise</p>
+                <div class="portfolio__filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web Design</button>
+                    <button class="filter-btn" data-filter="app">Web Apps</button>
+                    <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                </div>
+                <div class="portfolio__grid" id="portfolioGrid">
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-item__content">
+                            <h4>Corporate Website</h4>
+                            <p>Modern business website with clean design</p>
+                            <span class="status status--success">Completed</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="app">
+                        <div class="portfolio-item__content">
+                            <h4>Task Management App</h4>
+                            <p>Full-featured web application</p>
+                            <span class="status status--success">Completed</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="ecommerce">
+                        <div class="portfolio-item__content">
+                            <h4>Online Store</h4>
+                            <p>E-commerce platform with payment integration</p>
+                            <span class="status status--success">Completed</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-item__content">
+                            <h4>Restaurant Website</h4>
+                            <p>Beautiful website with online ordering</p>
+                            <span class="status status--info">In Progress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section__title">Get In Touch</h2>
+                <p class="section__subtitle">Ready to start your project? Let's discuss your ideas</p>
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <div class="contact-item">
+                            <h4>Email</h4>
+                            <p>hello@websolutions.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>Address</h4>
+                            <p>123 Web Street<br>Digital City, DC 12345</p>
+                        </div>
+                    </div>
+                    <form class="contact__form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <select id="subject" name="subject" class="form-control" required>
+                                <option value="">Select a subject</option>
+                                <option value="web-design">Web Design</option>
+                                <option value="development">Development</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3>WebSolutions</h3>
+                    <p>Creating amazing web experiences since 2020</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Web Design</a></li>
+                            <li><a href="#services">Development</a></li>
+                            <li><a href="#services">Consultation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 WebSolutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">â†‘</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
